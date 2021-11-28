@@ -42,6 +42,7 @@ namespace Vacation
                 {
                     Console.WriteLine("You can't save the money.");
                     Console.WriteLine(days);
+                    
 
                     return;
                 }
@@ -52,6 +53,7 @@ namespace Vacation
 
                     return;
                 }
+
 
                 action = Console.ReadLine();
             }
