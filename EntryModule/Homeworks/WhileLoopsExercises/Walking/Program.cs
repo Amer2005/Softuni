@@ -39,7 +39,7 @@ namespace Walking
             }
             else
             {
-                Console.WriteLine($"{10000 - steps} more steps to reach goal");
+                Console.WriteLine($"{10000 - steps} more steps to reach goal.");
             }
         }
     }
