@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p10_MultiplyEvenByOdd
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(GetMultipleOfEvenAndOdds(number));
+        }
+
+        static int GetMultipleOfEvenAndOdds(int number)
+        {
+            return GetSumOfEvenDigits(number) * GetSumOfOddDigits(number);
+        }
+
+        static int GetSumOfEvenDigits(int number)
+        {
+            number = Math.Abs(number);
+
+            int evenSum = 0;
+
+            while (number > 0)
+            {
+                int digit = number % 10;
+
+                if (digit % 2 == 0)
+                {
+                    evenSum += digit;
+                }
+
+                number /= 10;
+            }
+
+            return evenSum;
+        }
+
+        static int GetSumOfOddDigits(int number)
+        {
+            number = Math.Abs(number);
+
+            int oddSum = 0;
+
+            while (number > 0)
+            {
+                int digit = number % 10;
+
+                if (digit % 2 != 0)
+                {
+                    oddSum += digit;
+                }
+
+                number /= 10;
+            }
+
+            return oddSum;
+        }
+    }
+}
