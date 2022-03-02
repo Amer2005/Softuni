@@ -23,11 +23,6 @@ namespace p07_VehicleCatalogue
 
         public int CompareTo(Car other)
         {
-            if (this.Brand.CompareTo(other.Brand) == 0)
-            {
-                return 1;
-            }
-
             return this.Brand.CompareTo(other.Brand);
         }
 
@@ -54,11 +49,6 @@ namespace p07_VehicleCatalogue
 
         public int CompareTo(Truck other)
         {
-            if (this.Brand.CompareTo(other.Brand) == 0)
-            {
-                return 1;
-            }
-
             return this.Brand.CompareTo(other.Brand);
         }
 

@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace p01_AdvertisementMessage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] phrases = { "Excellent product.", "Such a great product.", "I always use that product.", "Best product of its category.", "Exceptional product.", "I can’t live without this product." };
+
+            string[] events = { "Now I feel good.", "I have succeeded with this product.", "Makes miracles. I am happy of the results!", "I cannot believe but now I feel awesome.", "Try it yourself, I am very satisfied.", "I feel great!" };
+
+            string[] authors = { "Diana", "Petya", "Stella", "Elena", "Katya", "Iva", "Annie", "Eva" };
+
+            string[] cities = { "Burgas", "Sofia", "Plovdiv", "Varna", "Ruse" };
+
+            int generateAmount = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < generateAmount; i++)
+            {
+                Console.WriteLine(GenerateAd(phrases, events, authors, cities));
+            }
+        }
+
+        static string GenerateAd(string[] phrases, string[] events, string[] authors, string[] cities)
+        {
+            string phrase = SelectRandomSentance(phrases);
+
+            string adEvent = SelectRandomSentance(events);
+
+            string author = SelectRandomSentance(authors);
+
+            string city = SelectRandomSentance(cities);
+
+            string ad = $"{phrase} {adEvent} {author} – {city}.";
+
+            return ad;
+        }
+
+        static string SelectRandomSentance(string[] sentances)
+        {
+            Random random = new Random();
+
+            int randomIndex = random.Next(0, sentances.Length);
+
+            return sentances[randomIndex];
+        }
+    }
+}
