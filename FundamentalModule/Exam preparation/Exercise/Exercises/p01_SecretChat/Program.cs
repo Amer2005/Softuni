@@ -54,6 +54,7 @@ namespace p01_SecretChat
                 Console.WriteLine(message);
             }
 
+            //Laptop test
             Console.WriteLine($"You have a new text message: {message}");
         }
     }
