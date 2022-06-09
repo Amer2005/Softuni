@@ -12,13 +12,20 @@ namespace CarManufacturer
             double fuelQuantity = double.Parse(Console.ReadLine());
             double fuelConsumption = double.Parse(Console.ReadLine());
 
-            Car firstCar = new Car();
+            Car firstCar = new Car(); // -> 123
+            
             Car secondCar = new Car(make, model, year);
+
+            secondCar = firstCar; // -> 123
+
+            Console.WriteLine(firstCar.WhoAmI());
+            Console.WriteLine(secondCar.WhoAmI());
+
             Car thirdCar = new Car(make, model, year, fuelQuantity, fuelConsumption);
         }
     }
 
-    class Car
+    struct Car
     {
         private int year;
         private string make;
@@ -26,20 +33,13 @@ namespace CarManufacturer
         private double fuelQuantity;
         private double fuelConsumption;
 
-        public Car()
+        public Car(string make, string model, int year)
         {
             Make = "VW";
             Model = "Golf";
             Year = 2025;
             FuelQuantity = 200;
             FuelConsumption = 10;
-        }
-
-        public Car(string make, string model, int year) : this()
-        {
-            Make = make;
-            Model = model;
-            Year = year;
         }
 
         public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
