@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p01_ListyIterator", "p01_ListyIterator\p01_ListyIterator.csproj", "{B4AC9F73-12E9-4427-AD14-77349F143FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p01_ListyIterator", "p01_ListyIterator\p01_ListyIterator.csproj", "{B4AC9F73-12E9-4427-AD14-77349F143FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03_Stack", "p03_Stack\p03_Stack.csproj", "{47B40691-3C2D-4B8C-B212-38E30765020E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p03_Stack", "p03_Stack\p03_Stack.csproj", "{47B40691-3C2D-4B8C-B212-38E30765020E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p04_Froggy", "p04_Froggy\p04_Froggy.csproj", "{5A740AA7-36AA-4AC4-BF79-7BC1B25364C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p04_Froggy", "p04_Froggy\p04_Froggy.csproj", "{5A740AA7-36AA-4AC4-BF79-7BC1B25364C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p05_ComparingObjects", "p05_ComparingObjects\p05_ComparingObjects.csproj", "{82E1DFB5-D264-41CF-BF31-1AEC6D7BBB5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p05_ComparingObjects", "p05_ComparingObjects\p05_ComparingObjects.csproj", "{82E1DFB5-D264-41CF-BF31-1AEC6D7BBB5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p06_EqualityLogic", "p06_EqualityLogic\p06_EqualityLogic.csproj", "{58058C9C-F67B-4B3A-9578-BE4691B18BC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p06_EqualityLogic", "p06_EqualityLogic\p06_EqualityLogic.csproj", "{58058C9C-F67B-4B3A-9578-BE4691B18BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p07_CustomComparator", "p07_CustomComparator\p07_CustomComparator.csproj", "{8F02A06E-7C1C-40AA-B65D-BC2956F1BE04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{58058C9C-F67B-4B3A-9578-BE4691B18BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58058C9C-F67B-4B3A-9578-BE4691B18BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58058C9C-F67B-4B3A-9578-BE4691B18BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F02A06E-7C1C-40AA-B65D-BC2956F1BE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F02A06E-7C1C-40AA-B65D-BC2956F1BE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F02A06E-7C1C-40AA-B65D-BC2956F1BE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F02A06E-7C1C-40AA-B65D-BC2956F1BE04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

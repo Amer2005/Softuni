@@ -8,31 +8,35 @@ namespace p05_ComparingObjects
     {
         static void Main(string[] args)
         {
-            List<Person> people = new List<Person>();
+            Person person1 = new Person("A", 1);
+            Person person2 = new Person("A", 1);
 
-            string input;
+            //Console.WriteLine(person1.CompareTo(person2));
 
-            while ((input = Console.ReadLine()) != "END")
+            SortedSet<Person> peopleSortedSet = new SortedSet<Person>();
+            HashSet<Person> peopleHashSet = new HashSet<Person>();
+
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
             {
-                string[] parts = input.Split(' ');
+                string[] inputArgs = Console.ReadLine().Split(' ').ToArray();
 
-                people.Add(new Person(parts[0], int.Parse(parts[1]), parts[2]));
+                Person personNow = new Person(inputArgs[0], int.Parse(inputArgs[1]));
+
+                if (!peopleSortedSet.Contains(personNow))
+                {
+                    peopleSortedSet.Add(personNow);
+                }
+                
+                if (!peopleHashSet.Contains(personNow))
+                {
+                    peopleHashSet.Add(personNow);
+                }
             }
 
-            int searchIndex = int.Parse(Console.ReadLine());
-
-            searchIndex--;
-
-            int matchesCount = people.Count(x => x.CompareTo(people[searchIndex]) == 0);
-
-            if (matchesCount == 1)
-            {
-                Console.WriteLine("No matches");
-
-                return;
-            }
-
-            Console.WriteLine($"{matchesCount} {people.Count - matchesCount} {people.Count}");
+            Console.WriteLine(peopleSortedSet.Count);
+            Console.WriteLine(peopleHashSet.Count);
         }
     }
 }

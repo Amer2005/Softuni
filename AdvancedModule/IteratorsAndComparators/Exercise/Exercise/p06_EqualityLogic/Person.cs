@@ -7,7 +7,7 @@ namespace p05_ComparingObjects
 {
     public class Person : IComparable<Person>
     {
-        public Person(string name, int age, string town)
+        public Person(string name, int age)
         {
             Name = name;
             Age = age;
@@ -19,9 +19,9 @@ namespace p05_ComparingObjects
 
         public int CompareTo(Person other)
         {
-            if(this.Name.CompareTo(other.Name) != 0)
+            if(this.Name.ToLower().CompareTo(other.Name.ToLower()) != 0)
             {
-                return this.Name.CompareTo(other.Name);
+                return this.Name.ToLower().CompareTo(other.Name.ToLower());
             }
 
             if (this.Age.CompareTo(other.Age) != 0)
@@ -30,6 +30,23 @@ namespace p05_ComparingObjects
             }
 
             return 0;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Person))
+            {
+                return false;
+            }
+
+            Person other = (Person)obj;
+
+            return this.CompareTo(other) == 0;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Name.ToLower(), Age);
         }
     }
 }
