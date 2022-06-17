@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p01_MealPlan", "p01_MealPlan\p01_MealPlan.csproj", "{E38B5E26-802C-4CFE-A9BA-1CC07ADDB845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p01_MealPlan", "p01_MealPlan\p01_MealPlan.csproj", "{E38B5E26-802C-4CFE-A9BA-1CC07ADDB845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02_BeaverAtWork", "p02_BeaverAtWork\p02_BeaverAtWork.csproj", "{466B33BB-DF4D-4511-887B-058F84D9720A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E38B5E26-802C-4CFE-A9BA-1CC07ADDB845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38B5E26-802C-4CFE-A9BA-1CC07ADDB845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38B5E26-802C-4CFE-A9BA-1CC07ADDB845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{466B33BB-DF4D-4511-887B-058F84D9720A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{466B33BB-DF4D-4511-887B-058F84D9720A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{466B33BB-DF4D-4511-887B-058F84D9720A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{466B33BB-DF4D-4511-887B-058F84D9720A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
