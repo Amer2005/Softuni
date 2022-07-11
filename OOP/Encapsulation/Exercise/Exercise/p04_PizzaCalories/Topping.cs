@@ -21,7 +21,7 @@ namespace p04_PizzaCalories
 
             if (this.grams < 1 || this.grams > 50)
             {
-                throw new ArgumentException($"{this.type} weight should be in the range[1..50].");
+                throw new ArgumentException($"{this.type} weight should be in the range [1..50].");
             }
         }
 

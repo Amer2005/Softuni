@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p01_PersonInfo", "p01_PersonInfo\p01_PersonInfo.csproj", "{1D875FBE-FB1D-4680-A4D2-09DDDDF033D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p01_PersonInfo", "p01_PersonInfo\p01_PersonInfo.csproj", "{1D875FBE-FB1D-4680-A4D2-09DDDDF033D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02_MultipleImplementation", "p02_MultipleImplementation\p02_MultipleImplementation.csproj", "{FB3CF74E-E83F-43E8-9826-DA03ADBB3FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p02_MultipleImplementation", "p02_MultipleImplementation\p02_MultipleImplementation.csproj", "{FB3CF74E-E83F-43E8-9826-DA03ADBB3FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03_Telephony", "p03_Telephony\p03_Telephony.csproj", "{8562C86D-2D31-4216-A02D-B81E773F6C59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p03_Telephony", "p03_Telephony\p03_Telephony.csproj", "{8562C86D-2D31-4216-A02D-B81E773F6C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p04_BorderControl", "p04_BorderControl\p04_BorderControl.csproj", "{59191076-9151-4EC6-8980-D5D85D2EEFED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p04_BorderControl", "p04_BorderControl\p04_BorderControl.csproj", "{59191076-9151-4EC6-8980-D5D85D2EEFED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p05_BirthdayCelebrations", "p05_BirthdayCelebrations\p05_BirthdayCelebrations.csproj", "{18027AA8-249F-463F-A672-D406858BC045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p05_BirthdayCelebrations", "p05_BirthdayCelebrations\p05_BirthdayCelebrations.csproj", "{18027AA8-249F-463F-A672-D406858BC045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p06_FoodShortage", "p06_FoodShortage\p06_FoodShortage.csproj", "{EA587F8A-4E8F-4634-9925-2BAD724CBD17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p06_FoodShortage", "p06_FoodShortage\p06_FoodShortage.csproj", "{EA587F8A-4E8F-4634-9925-2BAD724CBD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p07_MilitaryElite", "p07_MilitaryElite\p07_MilitaryElite.csproj", "{13146A46-237A-466D-8309-F158BFF5F9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p08_CollectionHierarchy", "p08_CollectionHierarchy\p08_CollectionHierarchy.csproj", "{DD3E555E-E78C-49C5-AB39-CC6C2EB754C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{EA587F8A-4E8F-4634-9925-2BAD724CBD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA587F8A-4E8F-4634-9925-2BAD724CBD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA587F8A-4E8F-4634-9925-2BAD724CBD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13146A46-237A-466D-8309-F158BFF5F9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13146A46-237A-466D-8309-F158BFF5F9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13146A46-237A-466D-8309-F158BFF5F9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13146A46-237A-466D-8309-F158BFF5F9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3E555E-E78C-49C5-AB39-CC6C2EB754C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3E555E-E78C-49C5-AB39-CC6C2EB754C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3E555E-E78C-49C5-AB39-CC6C2EB754C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3E555E-E78C-49C5-AB39-CC6C2EB754C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
