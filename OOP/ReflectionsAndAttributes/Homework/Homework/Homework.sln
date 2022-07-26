@@ -5,15 +5,17 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p01_Stealer", "p01_Stealer\p01_Stealer.csproj", "{8BD3426D-6592-4C8F-91D4-5D2CEAF3B57D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p02_High-QualityMistakes", "p02_High-QualityMistakes\p02_High-QualityMistakes.csproj", "{76A53C71-4460-44E3-8792-9C130BEF4C81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p02_High-QualityMistakes", "p02_High-QualityMistakes\p02_High-QualityMistakes.csproj", "{76A53C71-4460-44E3-8792-9C130BEF4C81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p03_MissionPrivateImpossible", "p03_MissionPrivateImpossible\p03_MissionPrivateImpossible.csproj", "{937C366B-3148-422A-B037-CD5EEC11CFAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p03_MissionPrivateImpossible", "p03_MissionPrivateImpossible\p03_MissionPrivateImpossible.csproj", "{937C366B-3148-422A-B037-CD5EEC11CFAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p04_Collector", "p04_Collector\p04_Collector.csproj", "{CC495233-D660-4344-A5CF-4302CB6B16F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p04_Collector", "p04_Collector\p04_Collector.csproj", "{CC495233-D660-4344-A5CF-4302CB6B16F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p05_CreateAttribute", "p05_CreateAttribute\p05_CreateAttribute.csproj", "{AFD4ED6F-BAB7-4CDD-9808-FB7A44F4B147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "p06_CodeTracker", "p06_CodeTracker\p06_CodeTracker.csproj", "{8DB457C2-64C4-4A80-8693-8712EE4B9B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p06_CodeTracker", "p06_CodeTracker\p06_CodeTracker.csproj", "{8DB457C2-64C4-4A80-8693-8712EE4B9B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorAttribute", "p05_CreateAttribute\AuthorAttribute.csproj", "{BE020800-B22C-4CB5-AA1B-2F5E39CE5CF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA2", "AA2\AA2.csproj", "{11B5AFA9-4296-462B-84D7-1C6B604BDA48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +39,18 @@ Global
 		{CC495233-D660-4344-A5CF-4302CB6B16F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC495233-D660-4344-A5CF-4302CB6B16F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC495233-D660-4344-A5CF-4302CB6B16F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AFD4ED6F-BAB7-4CDD-9808-FB7A44F4B147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFD4ED6F-BAB7-4CDD-9808-FB7A44F4B147}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFD4ED6F-BAB7-4CDD-9808-FB7A44F4B147}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFD4ED6F-BAB7-4CDD-9808-FB7A44F4B147}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8DB457C2-64C4-4A80-8693-8712EE4B9B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8DB457C2-64C4-4A80-8693-8712EE4B9B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DB457C2-64C4-4A80-8693-8712EE4B9B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DB457C2-64C4-4A80-8693-8712EE4B9B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE020800-B22C-4CB5-AA1B-2F5E39CE5CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE020800-B22C-4CB5-AA1B-2F5E39CE5CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE020800-B22C-4CB5-AA1B-2F5E39CE5CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE020800-B22C-4CB5-AA1B-2F5E39CE5CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B5AFA9-4296-462B-84D7-1C6B604BDA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B5AFA9-4296-462B-84D7-1C6B604BDA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B5AFA9-4296-462B-84D7-1C6B604BDA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B5AFA9-4296-462B-84D7-1C6B604BDA48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
