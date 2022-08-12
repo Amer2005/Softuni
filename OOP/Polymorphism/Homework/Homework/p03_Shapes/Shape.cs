@@ -12,7 +12,7 @@ namespace Shapes
 
         public virtual string Draw()
         {
-            return "Can't draw";
+            return "Drawing ";
         }
     }
 }

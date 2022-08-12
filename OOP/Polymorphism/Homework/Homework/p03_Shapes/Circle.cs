@@ -25,33 +25,7 @@ namespace Shapes
 
         public override string Draw()
         {
-            int newRadius = (int)Math.Round(Radius);
-
-            double rIn = newRadius - 0.4;
-            double rOut = newRadius + 0.4;
-
-            StringBuilder result = new StringBuilder();
-
-            for (double y = newRadius; y >= -newRadius; --y)
-            {
-                for (double x = -newRadius; x < rOut; x += 0.5)
-                {
-                    double value = x * x + y * y;
-
-                    if (value >= rIn * rIn && value <= rOut * rOut)
-                    {
-                        result.Append("*");
-                    }
-                    else
-                    {
-                        result.Append(" ");
-                    }
-                }
-
-                result.AppendLine();
-            }
-
-            return result.ToString().TrimEnd();
+            return base.Draw() + this.GetType().Name;
         }
     }
 }

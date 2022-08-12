@@ -21,16 +21,19 @@ namespace Heroes.Models.Map
                 .OfType<Barbarian>()
                 .Select(x => x as Barbarian);
 
+            int deadKnightsAtStart = knights.Count(x => !x.IsAlive);
+            int deadBarabriansAtStart = barbarians.Count(x => !x.IsAlive);
+
             while (true)
             {
                 if(!knights.Any(x => x.IsAlive))
                 {
-                    return $"The barbarians took {barbarians.Count(x => !x.IsAlive)} casualties but won the battle.";
+                    return $"The barbarians took {barbarians.Count(x => !x.IsAlive) - deadBarabriansAtStart} casualties but won the battle.";
                 }
 
                 if (!barbarians.Any(x => x.IsAlive))
                 {
-                    return $"The knights took {knights.Count(x => !x.IsAlive)} casualties but won the battle.";
+                    return $"The knights took {knights.Count(x => !x.IsAlive) - deadKnightsAtStart} casualties but won the battle.";
                 }
 
                 FirstGroupAttackSecondGroup(knights, barbarians);

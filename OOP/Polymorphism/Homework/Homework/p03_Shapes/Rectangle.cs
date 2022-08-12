@@ -6,8 +6,36 @@ namespace Shapes
 {
     public class Rectangle : Shape
     {
-        public double Width { get; private set; }
-        public double Height { get; private set; }
+        private double height;
+        private double width;
+
+        public double Width
+        {
+            get { return this.width; }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("The side lenght must be positive!");
+                }
+
+                this.width = value;
+            }
+        }
+
+        public double Height
+        {
+            get { return this.height; }
+            private set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("The side lenght must be positive!");
+                }
+
+                this.height = value;
+            }
+        }
 
         public Rectangle(double height, double width)
         {
@@ -27,20 +55,7 @@ namespace Shapes
 
         public override string Draw()
         {
-            int newWidth = (int)Math.Round(Width);
-            int newHeight = (int)Math.Round(Height);
-
-            StringBuilder result = new StringBuilder();
-            result.AppendLine(MakeLine(newWidth, '*', '*'));
-
-            for (int i = 0; i < newHeight - 2; i++)
-            {
-                result.AppendLine(MakeLine(newWidth, ' ', '*'));
-            }
-
-            result.AppendLine(MakeLine(newWidth, '*', '*'));
-
-            return result.ToString().TrimEnd();
+            return base.Draw() + this.GetType().Name;
         }
 
         public string MakeLine(double lenght, char middle, char end)
