@@ -3,7 +3,7 @@ const { expect } = require("chai");
 describe('mathEnforcer', () => {
     describe('addFive', () => {
         it('should return undefined if value is not a number', () =>{
-            let value = 'not number';
+            let value = [];
 
             let result = mathEnforcer.addFive(value);
 
@@ -11,33 +11,33 @@ describe('mathEnforcer', () => {
         });
 
         it('should add five to a number', () =>{
-            let value = 3.4;
+            let value = 3.42;
 
             let result = mathEnforcer.addFive(value);
 
-            expect(result).to.be.equal(value + 5);
+            expect(result).to.be.closeTo(value + 5, 0.01);
         });
 
-        it('should subtract ten from a number', () =>{
+        it('should add five to a number', () =>{
             let value = -3.4;
 
             let result = mathEnforcer.addFive(value);
 
-            expect(result).to.be.equal(value + 5);
+            expect(result).to.be.closeTo(value + 5, 0.01);
         });
     });
 
     describe('subtractTen', () => {
         it('should return undefined if value is not a number', () =>{
-            let value = 'not number';
+            let value = ['not number'];
 
-            let result = mathEnforcer.addFive(value);
+            let result = mathEnforcer.subtractTen(value);
 
             expect(result).to.be.equal(undefined);
         });
 
         it('should subtract ten from a number', () =>{
-            let value = 3.4;
+            let value = 3.42;
 
             let result = mathEnforcer.subtractTen(value);
 
@@ -45,7 +45,7 @@ describe('mathEnforcer', () => {
         });
 
         it('should subtract ten from a number', () =>{
-            let value = -3.4;
+            let value = -3.42;
 
             let result = mathEnforcer.subtractTen(value);
 
@@ -65,7 +65,7 @@ describe('mathEnforcer', () => {
 
         it('should return undefined if second value is not a number', () =>{
             let value1 = 2;
-            let value2 = 'asd';
+            let value2 = ['asd'];
 
             let result = mathEnforcer.sum(value1, value2);
 

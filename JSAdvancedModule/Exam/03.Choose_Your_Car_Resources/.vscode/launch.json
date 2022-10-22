@@ -22,7 +22,6 @@
             ],
             "type": "node"
         },
-
         {
             "type": "node",
             "request": "launch",
@@ -30,7 +29,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\01.RequestValidator.js"
+            "program": "${workspaceFolder}\\chooseYourCar.js"
         }
     ]
 }
