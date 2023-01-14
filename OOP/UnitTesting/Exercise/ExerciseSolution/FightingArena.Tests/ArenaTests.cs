@@ -68,7 +68,7 @@
         {
             Arena arena = CreateTestingArena();
 
-            var ex = Assert.Catch<InvalidOperationException>(() =>
+            Exception ex = Assert.Catch<InvalidOperationException>(() =>
             {
                 arena.Fight("Peter", "Gosho");
             });
