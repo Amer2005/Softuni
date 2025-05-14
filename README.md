@@ -1,2 +1,2 @@
 # Softuni
-Softuni homeworks
+Repository made for my Softuni homeworks and projects
